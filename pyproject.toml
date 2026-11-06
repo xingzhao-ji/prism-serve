@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prismserve"
+version = "0.1.0"
+description = "Bounded vision inference, learned transfer head, and verifiable Triton preprocessing"
+requires-python = ">=3.12,<3.14"
+dependencies = ["torch==2.9.0", "torchvision==0.24.0", "numpy==2.3.4", "pillow==12.0.0", "fastapi==0.119.1", "uvicorn==0.38.0", "httpx==0.28.1", "anyio==4.11.0", "pydantic==2.12.3"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2", "pytest-asyncio==1.2.0", "ruff==0.14.2"]
+
+[project.scripts]
+prism = "prismserve.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = ["gpu: requires a real NVIDIA CUDA GPU; explicitly selected suite fails without one", "integration: real pretrained model or HTTP subprocess"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

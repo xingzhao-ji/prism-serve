@@ -1,0 +1,263 @@
+{
+  "geometry-probe.json": {
+    "encoded_bytes": 141,
+    "input_pixels": 16384,
+    "input_shape": [
+      1,
+      16384
+    ],
+    "resize_shape": [
+      256,
+      4194304
+    ],
+    "resized_pixels": 1073741824,
+    "accepted_by_predecode_caps": true
+  },
+  "geometry-recheck.json": {
+    "rejected_extreme_images": [
+      {
+        "shape": [
+          1,
+          16384
+        ],
+        "status": 422,
+        "response": {
+          "detail": "resize would exceed 1048576 intermediate pixels"
+        }
+      },
+      {
+        "shape": [
+          16384,
+          1
+        ],
+        "status": 422,
+        "response": {
+          "detail": "resize would exceed 1048576 intermediate pixels"
+        }
+      },
+      {
+        "shape": [
+          1,
+          17
+        ],
+        "status": 422,
+        "response": {
+          "detail": "resize would exceed 1048576 intermediate pixels"
+        }
+      },
+      {
+        "shape": [
+          17,
+          1
+        ],
+        "status": 422,
+        "response": {
+          "detail": "resize would exceed 1048576 intermediate pixels"
+        }
+      }
+    ],
+    "accepted_boundary_exact_official_transform": true,
+    "subsequent_http_status": 200,
+    "readiness": 200
+  },
+  "real-http-recheck.json": {
+    "extreme_shape_status": 422,
+    "subsequent_prediction_status": 200,
+    "readiness": 200,
+    "real_pretrained_model_id": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "scope": "real TCP HTTP, installed wheel, CPU pretrained ResNet18"
+  },
+  "head-overflow-probe.json": {
+    "accepted_overflowing_finite_head": true,
+    "probabilities": [
+      "NaN",
+      "NaN",
+      "NaN",
+      "NaN",
+      "NaN"
+    ]
+  },
+  "head-overflow-recheck.json": [
+    {
+      "parameter": "1e+100",
+      "dtype": "float64",
+      "exception": "ValueError",
+      "message": "head must contain finite float32-representable values",
+      "readiness": 503
+    },
+    {
+      "parameter": "3e+38",
+      "dtype": "float32",
+      "exception": "RuntimeError",
+      "message": "nonfinite model features or logits",
+      "readiness": 503
+    }
+  ],
+  "training_replay": {
+    "head_arrays_exact": true,
+    "selection_report_exact": true
+  },
+  "assessment_replay": {
+    "all_report_fields_exact": true,
+    "samples": 300,
+    "trained_accuracy": 0.9533333333333334,
+    "mapped_accuracy": 0.9733333333333334,
+    "paired_bootstrap_95ci": [
+      -0.04,
+      -0.0033333333333333335
+    ]
+  },
+  "source_audit": {
+    "initial_manifest_entries": 35,
+    "initial_manifest_matches": 35,
+    "weights_and_archive_full_hashes_verified": true,
+    "changed_source_inspected_and_retested": true
+  },
+  "final_cpu_tests": {
+    "command": "python -m pytest -q -m 'not gpu' -W error",
+    "context": "Extracted final source archive with PYTHONPATH pointing to its src; existing macOS dependencies",
+    "passed": 40,
+    "gpu_deselected": 11,
+    "seconds": 3.73,
+    "lint": "passed",
+    "format": "passed"
+  },
+  "gpu_execution_performed": false,
+  "expiration-race-recheck": {
+    "client_exception": "DeadlineExceeded",
+    "stats": {
+      "admitted": 1,
+      "completed": 0,
+      "expired": 1,
+      "cancelled": 0,
+      "rejected": 0,
+      "worker_failures": 0,
+      "failed": 0,
+      "pending": 0,
+      "unresolved": 0,
+      "queued": 0,
+      "batch_sizes": {
+        "1": 1
+      },
+      "queue_wait_ms_total": 0.04504199023358524,
+      "ready": true
+    },
+    "method": "block event loop in controlled backend to order already-due deadline callbacks"
+  },
+  "npy_header_allocation_original": {
+    "npz_bytes": 506,
+    "zip_uncompressed_bytes": 296,
+    "declared_npy_shape": [
+      1000000000
+    ],
+    "dtype": "float32",
+    "intercepted_numpy_allocation_bytes": 4000000000,
+    "actual_large_allocation_performed": false,
+    "mechanism": "Patched numpy.ndarray to raise before allocation; np.load reached it before head shape validation.",
+    "scope": "Trusted local optional trained-head artifact; not request supplied."
+  },
+  "npy_header_allocation_recheck": {
+    "huge_declared_shape": {
+      "rejected_before_array_construction": true,
+      "error": "head shape mismatch"
+    },
+    "truncated_expected_shape": {
+      "rejected_before_array_construction": true,
+      "error": "head array payload size mismatch"
+    },
+    "valid_float32_C_v1": true,
+    "valid_float32_C_v2": true,
+    "valid_float32_F_v1": true,
+    "valid_float32_F_v2": true,
+    "valid_float64_C_v1": true,
+    "valid_float64_C_v2": true,
+    "valid_float64_F_v1": true,
+    "valid_float64_F_v2": true,
+    "real_trained_head_exact_parity": true
+  },
+  "final_archive_recheck": {
+    "sha256": "deef83868f8c25a78277c35bb5ca6b1f9c0f5ed1bac3d60f9ad386de640a9059",
+    "bytes": 42608,
+    "source_files": 35,
+    "archive_files": 36,
+    "all_working_and_archive_hashes_match": true,
+    "exact_allowlist_regular_files_only": true,
+    "extracted_source_commands": [
+      {
+        "args": [
+          "-c",
+          "import prismserve.model; print(prismserve.model.__file__)"
+        ],
+        "returncode": 0,
+        "stdout": "$HOME/.cache/job-apps-runtime/prism-serve/independent-review/final-archive-79fxdfyd/prism-serve/src/prismserve/model.py\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "-m",
+          "prismserve",
+          "prepare",
+          "--help"
+        ],
+        "returncode": 0,
+        "stdout": "usage: prism prepare [-h] [--data DATA]\n\noptions:\n  -h, --help   show this help message and exit\n  --data DATA\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "-m",
+          "pytest",
+          "-q",
+          "-m",
+          "not gpu",
+          "-W",
+          "error"
+        ],
+        "returncode": 0,
+        "stdout": "........................................                                 [100%]\n40 passed, 11 deselected in 3.73s\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "-m",
+          "ruff",
+          "check",
+          "src",
+          "tests",
+          "scripts"
+        ],
+        "returncode": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "src",
+          "tests",
+          "scripts"
+        ],
+        "returncode": 0,
+        "stdout": "22 files already formatted\n",
+        "stderr": ""
+      }
+    ],
+    "dependencies": "Existing macOS .venv; no new GPU environment or public data download."
+  },
+  "gpu_scope": {
+    "executed": false,
+    "decision": "GPU execution deferred; no GPU evidence was produced."
+  },
+  "final_http_artifact_inspection": {
+    "source": "evidence/cpu-http-final.json",
+    "normal_http_200": 360,
+    "normal_requests": 360,
+    "stats_snapshots": 16,
+    "all_terminal_counts_reconcile": true,
+    "all_pending_and_unresolved_zero": true,
+    "independently_reexecuted_full_matrix": false
+  }
+}

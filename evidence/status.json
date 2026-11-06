@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-23T18:53:16.070612+00:00",
+  "status": "CPU_VERIFIED_GPU_DEFERRED_BY_USER",
+  "cpu_suite": "40 passed, 11 GPU tests deselected",
+  "gpu_gate_exit_code_without_cuda": 1,
+  "gpu_gate_stderr": "FAIL: CUDA GPU required. No CPU/MPS fallback; no GPU evidence produced.",
+  "gpu_output_created": false,
+  "cloud_resources_created": false,
+  "paid_billing_upgrade_performed": false,
+  "pending": [
+    "CUDA numerical and downstream model parity",
+    "GPU kernel/torch.compile performance comparison",
+    "CUDA profiler trace",
+    "GPU HTTP load and failure evidence",
+    "Independent review of real NVIDIA evidence"
+  ],
+  "independent_cpu_review": "ACCEPTED"
+}

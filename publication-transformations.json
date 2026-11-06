@@ -1,0 +1,52 @@
+{
+  "transformations": [
+    {
+      "path": "README.md",
+      "original_sha256": "266e72ba11768ea1188e1c4ab2af5f2dcd40ee904b932216651a4abdb34a4e04",
+      "published_sha256": "1048c91401f5e6e7d8237a72bc2eeec3ae8922de456e7a762a9d4ffbcbdb6ea0",
+      "reason": "Remove private account/application context, redact home path or document standalone CPU release scope; measured results preserved."
+    },
+    {
+      "path": "evidence/independent-review.json",
+      "original_sha256": "a5524a4a985980756c6598aa89d833fe3b8a8502a92d491e985e12f2fd5a90c5",
+      "published_sha256": "15c8708a79031b14051b1db5baa3516a7cb4d51385df7c26469ea58d8f99297c",
+      "reason": "Remove private account/application context, redact home path or document standalone CPU release scope; measured results preserved."
+    },
+    {
+      "path": "evidence/cpu-test-reviewed.txt",
+      "original_sha256": "4ea615f55ac04d906ddfe55931e384250010b966a0f2fc16bedb21aa049cf8dd",
+      "published_sha256": "f6701314ebc891aba95aff857136350001b8a66c082145c725a72c38e6029cfd",
+      "reason": "Remove private account/application context, redact home path or document standalone CPU release scope; measured results preserved."
+    },
+    {
+      "path": "evidence/cpu-test-run.txt",
+      "original_sha256": "b09c21169f115f540029bf6fd0a3f571381fae3a4e0328a533e414d096960f21",
+      "published_sha256": "bca56907665019744421a9f2a07a43e2ccc5823cbb9d820fd51623f0ec3331a9",
+      "reason": "Remove private account/application context, redact home path or document standalone CPU release scope; measured results preserved."
+    },
+    {
+      "path": "evidence/status.json",
+      "original_sha256": "37d7f503f5b3fd4d8686d69321ef288072ae710c347b79e0b2e3fc50181e9115",
+      "published_sha256": "58b204f73bbb60b13325e5f720aa8db9a6d327b6e3d077f49d70a5e397d517f6",
+      "reason": "Remove private account/application context, redact home path or document standalone CPU release scope; measured results preserved."
+    },
+    {
+      "path": "docs/independent-employer-review.md",
+      "original_sha256": "9556b06b29333879e1ca0972c1d27949efc9ed61413808e64d42cc6a9ab1fac9",
+      "published_sha256": "523fdb52c279fa3588931a2d458038380ba36c754f300cd28ccfa5b436bb8b0d",
+      "reason": "Remove private account/application context, redact home path or document standalone CPU release scope; measured results preserved."
+    },
+    {
+      "path": "docs/gpu-run-plan.md",
+      "original_sha256": "8eff3e8e01a1b6148667d761a7fa4698074c2e9673ef963e4de6a8dc15134fa8",
+      "published_sha256": "e380131fbb99a0687cf20a9287d63893c4368697d0529d4cbfcee44431f020cd",
+      "reason": "Remove private account/application context, redact home path or document standalone CPU release scope; measured results preserved."
+    }
+  ],
+  "exclusions": [
+    "evidence/cpu-head.npz",
+    "scripts/gcp_plan.py",
+    "tests/test_cloud_plan.py"
+  ],
+  "historical_source_entries_checked": 33
+}

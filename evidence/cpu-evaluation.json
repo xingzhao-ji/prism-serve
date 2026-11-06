@@ -1,0 +1,903 @@
+{
+  "environment": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.12.12",
+    "torch": "2.9.0",
+    "device": "cpu",
+    "cuda_available": false,
+    "cuda_version": null
+  },
+  "manifest_sha256": "8e1da7d488f556740698bb4d8978262ad86c69ee7e12589d57f4135063812ab3",
+  "artifact_head_sha256": "08d29039b85a525b26a4f7de250145c560e0ff69940e6e8942080fc3eac0adcf",
+  "qa": {
+    "selected_count": 1100,
+    "exact_byte_duplicates": 0,
+    "exact_pixel_duplicates": 0,
+    "near_duplicate_review": "not performed; perceptual leakage remains possible",
+    "label_source": "original folder synset; not human relabeled"
+  },
+  "class_mapping": [
+    {
+      "label": "tench",
+      "imagenet_id": 0
+    },
+    {
+      "label": "English springer",
+      "imagenet_id": 217
+    },
+    {
+      "label": "cassette player",
+      "imagenet_id": 482
+    },
+    {
+      "label": "chain saw",
+      "imagenet_id": 491
+    },
+    {
+      "label": "church",
+      "imagenet_id": 497
+    },
+    {
+      "label": "French horn",
+      "imagenet_id": 566
+    },
+    {
+      "label": "garbage truck",
+      "imagenet_id": 569
+    },
+    {
+      "label": "gas pump",
+      "imagenet_id": 571
+    },
+    {
+      "label": "golf ball",
+      "imagenet_id": 574
+    },
+    {
+      "label": "parachute",
+      "imagenet_id": 701
+    }
+  ],
+  "unrestricted_imagenet_1000_accuracy": 0.6466666666666666,
+  "mapped_pretrained_10_class": {
+    "n": 300,
+    "accuracy": 0.9733333333333334,
+    "ece_10_bins": 0.011653222640355473,
+    "cross_entropy": 0.07706717401742935,
+    "confusion": [
+      [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        28,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        28,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        29
+      ]
+    ],
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.30000000000000004,
+        "count": 1,
+        "accuracy": 0.0,
+        "confidence": 0.38367700576782227
+      },
+      {
+        "lower": 0.4,
+        "count": 2,
+        "accuracy": 0.5,
+        "confidence": 0.45068079233169556
+      },
+      {
+        "lower": 0.5,
+        "count": 4,
+        "accuracy": 0.5,
+        "confidence": 0.5599689483642578
+      },
+      {
+        "lower": 0.6000000000000001,
+        "count": 6,
+        "accuracy": 0.8333333333333334,
+        "confidence": 0.6532744765281677
+      },
+      {
+        "lower": 0.7000000000000001,
+        "count": 5,
+        "accuracy": 0.8,
+        "confidence": 0.736625075340271
+      },
+      {
+        "lower": 0.8,
+        "count": 12,
+        "accuracy": 0.9166666666666666,
+        "confidence": 0.8582675457000732
+      },
+      {
+        "lower": 0.9,
+        "count": 270,
+        "accuracy": 0.9962962962962963,
+        "confidence": 0.9937934875488281
+      }
+    ],
+    "per_class": [
+      {
+        "label": "tench",
+        "n": 30,
+        "recall": 1.0
+      },
+      {
+        "label": "English springer",
+        "n": 30,
+        "recall": 1.0
+      },
+      {
+        "label": "cassette player",
+        "n": 30,
+        "recall": 0.9333333333333333
+      },
+      {
+        "label": "chain saw",
+        "n": 30,
+        "recall": 0.9666666666666667
+      },
+      {
+        "label": "church",
+        "n": 30,
+        "recall": 0.9666666666666667
+      },
+      {
+        "label": "French horn",
+        "n": 30,
+        "recall": 1.0
+      },
+      {
+        "label": "garbage truck",
+        "n": 30,
+        "recall": 0.9666666666666667
+      },
+      {
+        "label": "gas pump",
+        "n": 30,
+        "recall": 0.9333333333333333
+      },
+      {
+        "label": "golf ball",
+        "n": 30,
+        "recall": 1.0
+      },
+      {
+        "label": "parachute",
+        "n": 30,
+        "recall": 0.9666666666666667
+      }
+    ]
+  },
+  "trained_head": {
+    "n": 300,
+    "accuracy": 0.9533333333333334,
+    "ece_10_bins": 0.02997800956169767,
+    "cross_entropy": 0.2110072374343872,
+    "confusion": [
+      [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        29,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        28,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        26,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        28,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        28
+      ]
+    ],
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.30000000000000004,
+        "count": 1,
+        "accuracy": 1.0,
+        "confidence": 0.39615437388420105
+      },
+      {
+        "lower": 0.4,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.5,
+        "count": 6,
+        "accuracy": 0.6666666666666666,
+        "confidence": 0.5717799067497253
+      },
+      {
+        "lower": 0.6000000000000001,
+        "count": 4,
+        "accuracy": 0.5,
+        "confidence": 0.6551720499992371
+      },
+      {
+        "lower": 0.7000000000000001,
+        "count": 6,
+        "accuracy": 0.6666666666666666,
+        "confidence": 0.7487269043922424
+      },
+      {
+        "lower": 0.8,
+        "count": 2,
+        "accuracy": 0.5,
+        "confidence": 0.8784539699554443
+      },
+      {
+        "lower": 0.9,
+        "count": 281,
+        "accuracy": 0.9750889679715302,
+        "confidence": 0.9962643384933472
+      }
+    ],
+    "per_class": [
+      {
+        "label": "tench",
+        "n": 30,
+        "recall": 1.0
+      },
+      {
+        "label": "English springer",
+        "n": 30,
+        "recall": 1.0
+      },
+      {
+        "label": "cassette player",
+        "n": 30,
+        "recall": 0.9666666666666667
+      },
+      {
+        "label": "chain saw",
+        "n": 30,
+        "recall": 0.9666666666666667
+      },
+      {
+        "label": "church",
+        "n": 30,
+        "recall": 0.9666666666666667
+      },
+      {
+        "label": "French horn",
+        "n": 30,
+        "recall": 0.9333333333333333
+      },
+      {
+        "label": "garbage truck",
+        "n": 30,
+        "recall": 0.9666666666666667
+      },
+      {
+        "label": "gas pump",
+        "n": 30,
+        "recall": 0.8666666666666667
+      },
+      {
+        "label": "golf ball",
+        "n": 30,
+        "recall": 0.9333333333333333
+      },
+      {
+        "label": "parachute",
+        "n": 30,
+        "recall": 0.9333333333333333
+      }
+    ]
+  },
+  "head_minus_mapped_accuracy": -0.02,
+  "paired_bootstrap_95ci": [
+    -0.04,
+    -0.0033333333333333335
+  ],
+  "head_demonstrates_improvement": false,
+  "blur_radius_2": {
+    "n": 300,
+    "accuracy": 0.76,
+    "ece_10_bins": 0.1224771432081858,
+    "cross_entropy": 0.9186891913414001,
+    "confusion": [
+      [
+        26,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        25,
+        3,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        27,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        27,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        8,
+        18,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        3,
+        7,
+        0,
+        19,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        2,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        5,
+        2,
+        0,
+        2,
+        11,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        28,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25
+      ]
+    ],
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lower": 0.30000000000000004,
+        "count": 3,
+        "accuracy": 0.0,
+        "confidence": 0.3690403699874878
+      },
+      {
+        "lower": 0.4,
+        "count": 10,
+        "accuracy": 0.3,
+        "confidence": 0.45360898971557617
+      },
+      {
+        "lower": 0.5,
+        "count": 17,
+        "accuracy": 0.23529411764705882,
+        "confidence": 0.555169403553009
+      },
+      {
+        "lower": 0.6000000000000001,
+        "count": 21,
+        "accuracy": 0.47619047619047616,
+        "confidence": 0.6559749841690063
+      },
+      {
+        "lower": 0.7000000000000001,
+        "count": 32,
+        "accuracy": 0.59375,
+        "confidence": 0.7485318183898926
+      },
+      {
+        "lower": 0.8,
+        "count": 19,
+        "accuracy": 0.6842105263157895,
+        "confidence": 0.862201988697052
+      },
+      {
+        "lower": 0.9,
+        "count": 198,
+        "accuracy": 0.9040404040404041,
+        "confidence": 0.9876349568367004
+      }
+    ],
+    "per_class": [
+      {
+        "label": "tench",
+        "n": 30,
+        "recall": 0.8666666666666667
+      },
+      {
+        "label": "English springer",
+        "n": 30,
+        "recall": 0.8333333333333334
+      },
+      {
+        "label": "cassette player",
+        "n": 30,
+        "recall": 0.9
+      },
+      {
+        "label": "chain saw",
+        "n": 30,
+        "recall": 0.9
+      },
+      {
+        "label": "church",
+        "n": 30,
+        "recall": 0.6
+      },
+      {
+        "label": "French horn",
+        "n": 30,
+        "recall": 0.6333333333333333
+      },
+      {
+        "label": "garbage truck",
+        "n": 30,
+        "recall": 0.7333333333333333
+      },
+      {
+        "label": "gas pump",
+        "n": 30,
+        "recall": 0.36666666666666664
+      },
+      {
+        "label": "golf ball",
+        "n": 30,
+        "recall": 0.9333333333333333
+      },
+      {
+        "label": "parachute",
+        "n": 30,
+        "recall": 0.8333333333333334
+      }
+    ]
+  },
+  "failures_by_descending_confidence": [
+    {
+      "path": "imagenette2-160/val/n03425413/n03425413_251.JPEG",
+      "expected": "gas pump",
+      "predicted": "garbage truck",
+      "confidence": 0.9979302883148193,
+      "mapped_baseline_correct": false
+    },
+    {
+      "path": "imagenette2-160/val/n03888257/n03888257_3651.JPEG",
+      "expected": "parachute",
+      "predicted": "chain saw",
+      "confidence": 0.9955036044120789,
+      "mapped_baseline_correct": true
+    },
+    {
+      "path": "imagenette2-160/val/n03425413/n03425413_19050.JPEG",
+      "expected": "gas pump",
+      "predicted": "garbage truck",
+      "confidence": 0.9841984510421753,
+      "mapped_baseline_correct": false
+    },
+    {
+      "path": "imagenette2-160/val/n03445777/ILSVRC2012_val_00020502.JPEG",
+      "expected": "golf ball",
+      "predicted": "gas pump",
+      "confidence": 0.975298285484314,
+      "mapped_baseline_correct": true
+    },
+    {
+      "path": "imagenette2-160/val/n03425413/n03425413_13672.JPEG",
+      "expected": "gas pump",
+      "predicted": "church",
+      "confidence": 0.9250777959823608,
+      "mapped_baseline_correct": true
+    },
+    {
+      "path": "imagenette2-160/val/n03000684/n03000684_16991.JPEG",
+      "expected": "chain saw",
+      "predicted": "tench",
+      "confidence": 0.9090185761451721,
+      "mapped_baseline_correct": false
+    },
+    {
+      "path": "imagenette2-160/val/n02979186/n02979186_20561.JPEG",
+      "expected": "cassette player",
+      "predicted": "chain saw",
+      "confidence": 0.9001805782318115,
+      "mapped_baseline_correct": false
+    },
+    {
+      "path": "imagenette2-160/val/n03445777/n03445777_3222.JPEG",
+      "expected": "golf ball",
+      "predicted": "chain saw",
+      "confidence": 0.8708460330963135,
+      "mapped_baseline_correct": true
+    },
+    {
+      "path": "imagenette2-160/val/n03417042/n03417042_3280.JPEG",
+      "expected": "garbage truck",
+      "predicted": "tench",
+      "confidence": 0.7739620804786682,
+      "mapped_baseline_correct": false
+    },
+    {
+      "path": "imagenette2-160/val/n03028079/n03028079_15602.JPEG",
+      "expected": "church",
+      "predicted": "parachute",
+      "confidence": 0.7351672053337097,
+      "mapped_baseline_correct": false
+    },
+    {
+      "path": "imagenette2-160/val/n03394916/n03394916_29541.JPEG",
+      "expected": "French horn",
+      "predicted": "gas pump",
+      "confidence": 0.6835144758224487,
+      "mapped_baseline_correct": true
+    },
+    {
+      "path": "imagenette2-160/val/n03394916/n03394916_42200.JPEG",
+      "expected": "French horn",
+      "predicted": "chain saw",
+      "confidence": 0.6651310920715332,
+      "mapped_baseline_correct": true
+    },
+    {
+      "path": "imagenette2-160/val/n03425413/n03425413_13231.JPEG",
+      "expected": "gas pump",
+      "predicted": "church",
+      "confidence": 0.585037350654602,
+      "mapped_baseline_correct": true
+    },
+    {
+      "path": "imagenette2-160/val/n03888257/n03888257_12501.JPEG",
+      "expected": "parachute",
+      "predicted": "tench",
+      "confidence": 0.5614280700683594,
+      "mapped_baseline_correct": false
+    }
+  ],
+  "limits": [
+    "ImageNet pretraining overlaps source training images",
+    "Official val is held out from this head, not unseen in model development",
+    "Small balanced subset is not a representative deployment sample",
+    "Bootstrap assumes independent selected images",
+    "No independent labels, unseen-class or open-set evaluation",
+    "Softmax values are not calibrated deployment probabilities"
+  ],
+  "gpu_evidence": "pending"
+}

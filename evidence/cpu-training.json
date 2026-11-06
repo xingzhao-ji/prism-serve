@@ -1,0 +1,35 @@
+{
+  "seed": 41,
+  "epochs": 120,
+  "optimizer": "AdamW",
+  "learning_rate": 0.01,
+  "selection": "max validation accuracy, then min cross entropy, then larger decay",
+  "training_rows": 600,
+  "validation_rows": 200,
+  "selected_weight_decay": 0.01,
+  "folded_max_error": 2.9087066650390625e-05,
+  "validation_accuracy": 0.9750000238418579,
+  "validation_cross_entropy": 0.06441985070705414,
+  "candidates": [
+    {
+      "weight_decay": 0.0,
+      "accuracy": 0.9750000238418579,
+      "cross_entropy": 0.06465643644332886
+    },
+    {
+      "weight_decay": 0.001,
+      "accuracy": 0.9750000238418579,
+      "cross_entropy": 0.06463225930929184
+    },
+    {
+      "weight_decay": 0.01,
+      "accuracy": 0.9750000238418579,
+      "cross_entropy": 0.06441985070705414
+    }
+  ],
+  "manifest_sha256": "8e1da7d488f556740698bb4d8978262ad86c69ee7e12589d57f4135063812ab3",
+  "weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "feature_file_sha256": "c2f507048020a6feec70c8a86d5f052fe1af6942d20cb287812e5925a8ca85b1",
+  "head_sha256": "08d29039b85a525b26a4f7de250145c560e0ff69940e6e8942080fc3eac0adcf",
+  "assessment_used": false
+}

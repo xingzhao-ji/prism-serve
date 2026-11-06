@@ -1,0 +1,54 @@
+{
+  "verified_utc": "2026-11-06T18:38:48.568296+00:00",
+  "scope": "Fresh Python3.12 pinned dependency/wheel installation, product CPU tests, lint/format and CLI help. No data/weights download, training/HTTP timing or NVIDIA execution.",
+  "commands": [
+    {
+      "command": [
+        "python3.12",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 1.442779583000629
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements-macos.lock"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 20.077088832999834
+    },
+    {
+      "command": [
+        "make",
+        "test-cpu"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 8.593253833000745
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "prismserve",
+        "--help"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 0.07590866699956678
+    }
+  ],
+  "cpu_product_tests": 38,
+  "gpu_tests_deselected": 11,
+  "excluded_private_provisioning_tests": 2,
+  "hosted_ci": "Not yet run as of this record."
+}

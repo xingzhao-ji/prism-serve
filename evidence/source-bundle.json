@@ -1,0 +1,7 @@
+{
+  "file": "runs/prism-source.tar.gz",
+  "sha256": "deef83868f8c25a78277c35bb5ca6b1f9c0f5ed1bac3d60f9ad386de640a9059",
+  "bytes": 42608,
+  "source_files": 35,
+  "excludes": "data, environments, parent application corpus, private access-state, independent reviewer attestation"
+}

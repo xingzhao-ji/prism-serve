@@ -1,0 +1,30 @@
+.venv/bin/python -m pip install --no-deps .
+Processing $HOME/Desktop/job-apps/projects/prism-serve
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: prismserve
+  Building wheel for prismserve (pyproject.toml): started
+  Building wheel for prismserve (pyproject.toml): finished with status 'done'
+  Created wheel for prismserve: filename=prismserve-0.1.0-py3-none-any.whl size=17299 sha256=d293f28d6acf79e2f9ee6f68c9111f6f70049e12452faa35f0f50d0884363d30
+  Stored in directory: $HOME/Library/Caches/pip/wheels/13/7d/08/6ed30b4bc2f4f73ab3c7e9e26b64ea358d52f3ac6edd3d514d
+Successfully built prismserve
+Installing collected packages: prismserve
+  Attempting uninstall: prismserve
+    Found existing installation: prismserve 0.1.0
+    Uninstalling prismserve-0.1.0:
+      Successfully uninstalled prismserve-0.1.0
+Successfully installed prismserve-0.1.0
+
+[notice] A new release of pip is available: 25.3 -> 26.2.2
+[notice] To update, run: $HOME/.cache/job-apps-runtime/prism-serve/.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m ruff format --check src tests scripts
+22 files already formatted
+.venv/bin/python -m ruff check src tests scripts
+All checks passed!
+.venv/bin/python -m pytest -q -m 'not gpu' -W error
+...........................                                              [100%]
+27 passed, 11 deselected in 2.82s

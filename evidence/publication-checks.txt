@@ -1,0 +1,23 @@
+.venv/bin/python -m pip install --no-deps .
+Processing <standalone-checkout>
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: prismserve
+  Building wheel for prismserve (pyproject.toml): started
+  Building wheel for prismserve (pyproject.toml): finished with status 'done'
+  Created wheel for prismserve: filename=prismserve-0.1.0-py3-none-any.whl size=18431 sha256=a979c93633413408218e4257bef22827a2e244c60200ad40dc315ac47269242e
+  Stored in directory: <temporary-wheel-cache>
+Successfully built prismserve
+Installing collected packages: prismserve
+Successfully installed prismserve-0.1.0
+.venv/bin/python -m ruff format --check src tests scripts
+20 files already formatted
+.venv/bin/python -m ruff check src tests scripts
+All checks passed!
+.venv/bin/python -m pytest -q -m 'not gpu' -W error
+......................................                                   [100%]
+38 passed, 11 deselected in 5.44s
